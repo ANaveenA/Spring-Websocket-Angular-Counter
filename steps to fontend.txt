@@ -1,5 +1,5 @@
 1.go to nodejs webiste download msi and install https://nodejs.org/en/download/
-2.npm i @angular/cli 
+2.npm i -g @angular/cli@latest
 3.open frontend folder - project 
 4.npm install
 3.npm start
