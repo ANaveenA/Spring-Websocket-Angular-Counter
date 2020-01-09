@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { WebSocketService } from './services/websocket.service';
-import { WebSocketSubject } from 'rxjs/observable/dom/WebSocketSubject';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -29,21 +28,6 @@ export class AppComponent {
 
         });
 
-        var host = 'ws://localhost:8080/websocket-backend/socket/notify';
-
-    this.socket = new WebSocketSubject(host);
-
-
-    this.socket
-      .subscribe(
-      (message) => {
-        console.log(message);
-      },
-      (err) => console.log(err)
-      );
-      
-
-       console.log(this.socket)
-    }
+        
 
 }
